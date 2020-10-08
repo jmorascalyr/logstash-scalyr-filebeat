@@ -1,6 +1,6 @@
 # Scalyr Logstash Plugin
 
-This is extended version from [ELK on Docker](https://github.com/deviantony/docker-elk) with Filebeat and Scalyr plugins. Filebeat takes in charge of streaming log file from nginx to Filebeat to Logstash then sends the body to scalyr.
+This is extended version from [ELK on Docker](https://github.com/deviantony/docker-elk) with Filebeat and Scalyr plugins. Filebeat will log nginx access logs. Send them through Filebeat to Logstash which sends the body to scalyr.
 
 This is to be used as a template to templatize the use of the scalyr logstash plugin. 
 
