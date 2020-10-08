@@ -48,9 +48,13 @@ This is to be used as a template to templatize the use of the scalyr logstash pl
 - Elasticsearch: containing build image and configure for Elasticsearch
 - Filebeat: containing build image and configure for Filebeat to streaming log of Nginx to Logstash
 - Logstash: containing build image and configure pipeline for Logstash to process sent log file from Filebeat. Then downloads the scalyr plugin. 
+- Scalyr Plugin: is installed with the logstash build. Just provide an api key 
 - Kibana: containing build image and configure for Kibana to visualize data
 
 ## Getting Started
+First set the scalyr api key this is located in `./logstash/pipeline/nginx.conf`
+
+Troubleshooting tip: you may need to grant permissions for your local machine to share the `/nginx/log/*.log` files
 
 To run this stack, run the following command
 ```bash
